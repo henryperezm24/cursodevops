@@ -26,7 +26,8 @@ jobs:
   deployar:
 
     runs-on: ubuntu-latest
-
+    needs: construir
+    
     steps:
     
       - name: Hola Mundo
