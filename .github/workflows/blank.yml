@@ -14,7 +14,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-     
+    
+      - name: Hola Mundo
+        run: echo Hello, world!
+
+      - name: Imprimir multiples lineas
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+  
+  deployar:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    
       - name: Hola Mundo
         run: echo Hello, world!
 
