@@ -20,14 +20,15 @@ jobs:
 
     steps:
     
-      - name: Listar
-        run: ls -la
-        
+
       - name: Hola Mundo
         run: echo Hello, world!
       
       - name: Checkout
         uses: actions/checkout@v5.0.0
+
+      - name: Listar
+        run: ls -la
 
       
 
