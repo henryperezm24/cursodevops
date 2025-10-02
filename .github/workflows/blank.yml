@@ -24,6 +24,8 @@ jobs:
         run: echo Hello, world!
 
       - name: Imprimir multiples lineas
+        if: ${{env.platform == 'aws'}}
+
         run: |
           echo "Valor de la plataforma: ${{env.platform}}"
           echo "Valor de la region: ${{env.region}}"
