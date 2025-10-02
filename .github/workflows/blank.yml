@@ -20,30 +20,38 @@ jobs:
 
     steps:
     
+      - name: Listar
+        run: ls -la
+        
       - name: Hola Mundo
         run: echo Hello, world!
+      
+      - name: Checkout
+        uses: actions/checkout@v5.0.0
 
-      - name: Imprimir multiples lineas
-        if: ${{env.platform == 'azure'}}
+      
 
-        run: |
-          echo "Valor de la plataforma: ${{env.platform}}"
-          echo "Valor de la region: ${{env.region}}"
-          echo "Valor de la cuenta: ${{env.acount}}"
-          echo "Valor de la GithubAction: $GITHUB_ACTION"
-          echo "Valor de la Actor: $GITHUB_ACTOR"
+      #- name: Imprimir multiples lineas
+      #  if: ${{env.platform == 'azure'}}
+
+      #  run: |
+      #    echo "Valor de la plataforma: ${{env.platform}}"
+      #    echo "Valor de la region: ${{env.region}}"
+      #    echo "Valor de la cuenta: ${{env.acount}}"
+      #    echo "Valor de la GithubAction: $GITHUB_ACTION"
+      #    echo "Valor de la Actor: $GITHUB_ACTOR"
   
-  deployar:
+  #deployar:
 
-    runs-on: ubuntu-latest
-    needs: construir
+  #  runs-on: ubuntu-latest
+  #  needs: construir
 
-    steps:
+  #  steps:
     
-      - name: Hola Mundo
-        run: echo Hello, world!
+  #    - name: Hola Mundo
+  #      run: echo Hello, world!
 
-      - name: Imprimir multiples lineas
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+  #    - name: Imprimir multiples lineas
+  #      run: |
+  #        echo Add other actions to build,
+  #        echo test, and deploy your project.
