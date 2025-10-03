@@ -8,6 +8,17 @@ on:
 
 
 jobs:
+
+  db:
+    runs-on: ubuntu-latest
+
+    services:
+      mysql:
+        image: mysql
+      env:
+        MYSQL_ROOT_PASSWORD: admin
+      ports: 
+        - 3306:3606
   
   construir:
 
@@ -24,8 +35,8 @@ jobs:
       - name: Hola Mundo
         run: echo Hello, world!
       
-      - name: mi accion
-        uses: .github/actions/my-action
+      #- name: mi accion
+      #  uses: ./.github/actions/my-action
       
       - name: Checkout
         uses: actions/checkout@v5.0.0
