@@ -22,7 +22,9 @@ jobs:
 
     steps:
       - name: Imprimir variable
-        run: echo "Valor variable ${{vars.BASEDEDATOS}}"
+        run: echo "Valor variable ${{vars.BASEDATOS}}"
+      - name: Imprimir secret
+        run: echo "Valor variable ${{secrets.BASEDEDATOS}}"
 
       - name: Hola Mundo
         run: echo Hello, world!
