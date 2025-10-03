@@ -25,7 +25,7 @@ jobs:
         run: echo Hello, world!
       
       - name: mi accion
-        uses: ./.github/actions/my-action
+        uses: .github/actions/my-action
       
       - name: Checkout
         uses: actions/checkout@v5.0.0
