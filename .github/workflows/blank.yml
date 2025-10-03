@@ -15,10 +15,10 @@ jobs:
     services:
       mysql:
         image: mysql
-      env:
-        MYSQL_ROOT_PASSWORD: admin
-      ports: 
-        - 3306:3606
+        env:
+          MYSQL_ROOT_PASSWORD: admin
+        ports: 
+          - 3306:3606
   
   construir:
 
