@@ -43,6 +43,9 @@ jobs:
       - name: Instalar paquetes
         run: chmod +x script.sh
           ./script.sh
+      
+      - name: mi accion
+        uses: ./github/actions/my-action
 
       
 
